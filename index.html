@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chuyển đổi mã hex và màu gradient</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    #colorInput {
+      margin: 10px 0;
+      padding: 5px;
+    }
+
+    #gradientCheckbox {
+      margin: 10px 0;
+    }
+
+    #gradientColorInput {
+      display: none;
+      margin: 10px 0;
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <button onclick="changeColor()">Đổi mã hex</button><br>
+    <input type="text" id="colorInput" placeholder="Nhập mã màu hex">
+    <input type="checkbox" id="gradientCheckbox" onchange="toggleGradientInput()">Cho phép chọn màu gradient</input><br>
+    <input type="text" id="gradientColorInput" placeholder="Nhấn nút lần nữa để tạo mã màu">
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
